@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="./images/bookmarker.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <section id="home" class="position-relative">
+        <div class="container">
+
+            <div class="title">
+                <h1>Bookmarker</h1>
+            </div>
+            
+            <div class="content">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favourite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+
+                <div class="mb-3">
+                    <label for="" class="form-label">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                        Site Name
+                    </label>
+                    <input
+                        type="text"
+                        name="siteName"
+                        id="siteName"
+                        class="form-control"
+                        placeholder="Bookmark Name"  
+                        oninput="validateName()"           
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label">
+                        <i class="fa-solid fa-link"></i>
+                        Site URL
+                    </label>
+                    <input
+                        type="text"
+                        name="siteURL"
+                        id="siteURL"
+                        class="form-control"
+                        placeholder="Website URL"
+                        oninput="validateURL()"             
+                    />
+                </div>
+
+                <div class="button text-center">
+                    <button class="btn" id="submit" onclick="addSite()">Submit</button>
+                </div>
+            </div>
+
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+
+        </div>
+
+        <div id="alertSection">
+        </div>
+    </section>
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

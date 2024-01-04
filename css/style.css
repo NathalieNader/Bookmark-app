@@ -1,0 +1,176 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+::-moz-selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+#home {
+    background-color: #F7ECDE;
+    min-height: 100vh;
+}
+
+#home .container {
+    padding-block: 3rem;
+}
+
+#home .container .title{
+    text-align: center;
+}
+
+#home .container h1 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    padding-block: .5rem;
+    margin-bottom: .5rem;
+    font-size: 3.125rem;
+    position: relative;
+    display: inline-block;
+    isolation: isolate;
+
+}
+
+#home .container h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    background-color: #FEC260;
+    margin-bottom: .5rem;
+    z-index: -1;
+    -webkit-transition: height .5s ease-in-out;
+    -o-transition: height .5s ease-in-out;
+    transition: height .5s ease-in-out;
+}
+
+#home .container h1:hover::before {
+    height: 50%;
+}
+
+#home .container .content {
+    margin-top: 3rem;
+    padding: 1.5rem 1rem;
+    border-block: .125rem dotted black;
+}
+
+#home .container .content h2 {
+    font-size: 1.5625rem;
+    margin-bottom: .5rem;
+    font-family: 'Righteous', sans-serif;
+    background: -webkit-gradient(linear, left top, right top, from(#3ca55c), to(#b5ac49));
+    background: -o-linear-gradient(left, #3ca55c, #b5ac49);
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#home .container .content label {
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'PT Sans Caption', sans-serif;
+    padding-bottom: .5rem;
+}
+
+#home .container .content label i {
+    padding-right: .5rem;
+}
+
+#home .container .content input {
+    padding: .375rem .75rem;
+}
+
+#home .container .content .btn {
+    padding: .375rem 3rem;
+    background-color: #d1512d;
+    border: none;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+#home .container .content .btn:hover {
+    background-color: #BB4120;
+}
+
+#home .container table {
+    margin-block: 1.5rem 1rem;
+}
+
+#home .container table .btn-visit {
+    background-color: #9eb23b;
+    color: #fff;
+}
+
+#home .container table .btn-visit:hover {
+    background-color: #8A9E23;
+    border: .0625rem solid #6E8018;
+}
+
+#home .container table .btn-delete {
+    background-color: #eb1d36;
+    color: #fff;
+}
+
+#home .container table .btn-delete:hover {
+    background-color: #d30820;
+    border: .0625rem solid #ba081d;
+}
+
+#home .alertPage {
+    background-color: rgba(0, 0, 0, .5) !important;
+}
+
+#home .alertPage .alertMessage {
+    height: 15.625rem;
+    width: 30rem;
+    padding: 1.5rem;
+}
+
+#home .alertPage .alertMessage .circle-icons {
+    margin-bottom: 1.5rem;
+}
+
+#home .alertPage .alertMessage .circle-icons i{
+    margin-right: .3rem;
+    font-size: 1.125rem;
+}
+
+#home .alertPage .alertMessage .fa-xmark {
+    font-size: 1.5625rem;
+    cursor: pointer;
+}
+
+#home .alertPage .alertMessage p {
+    font-size: 1.3125rem;
+    font-family: 'Bree Serif', serif;
+    padding-bottom: .5rem;
+}
+
+#home .alertPage .alertMessage ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#home .alertPage .alertMessage ul li {
+    font-size: 1.1rem;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+#home .alertPage .alertMessage ul li i{
+    color: #BB4120;
+    padding: .5rem;
+}
